@@ -43,7 +43,7 @@ readfile(genes_14, cellnames_14, 'GSM2861514_E175_Only_Cortical_Cells_DGE.txt')
 
 for gene in genecells:
   if genecells[gene] < 3:
-    print "Only ", genecells[gene] , " cells so deleting gene from dictionary:", gene
+    #print "Only ", genecells[gene] , " cells so deleting gene from dictionary:", gene
     try: del genes_10[gene]
     except KeyError: pass
     try: del genes_11[gene]

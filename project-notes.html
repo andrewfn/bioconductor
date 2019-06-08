@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Writeup v 2.89.00 (2019-03-16)" />
+<style type="text/css" style>table.borders {border-width: 2px; border-spacing:2px; border-style: outset; border-color: gray;}
+table.borders th, table.borders td {border-width:1px; padding:1px 5px; border-style:inset;}
+table.borders th {background-color:#DDD;}
+table.headleft th.col1 { text-align:right; vertical-align:top;}
+table.borders p, table.borders ul, table.borders ol {margin-top:0; margin-bottom:0;}
+h1 {color: darkblue; border-bottom:solid windowtext 1.0pt; padding:0in 0in 1.0pt 0in}
+h2 {color: maroon}
+h3 {color: darkgreen}
+h4 {color: blue}
+h5 {color: red}
+.bluepoints li, li.bluepoints {color: darkblue; font-weight: bold; margin-top: 6px;}
+.bluepoints li li, li.bluepoints li, li.bluepoints div {color: black; font-weight: normal; margin-top: 0px;}
+.text {color: darkgreen; font-weight: bold}
+.gr {color: darkgreen; font-weight: bold}
+.small {font-size: xx-small}
+.red {color: #FF0040; font-weight: bold}
+.purple {color: #8000FF; font-weight: bold}
+.black {color: #000000; }
+.darkblue {color: darkblue; font-weight: bold}
+xbody {background-color : #FFF8F0}
+body {background-color : #FFFFFF}
+a.xlink {background: url(http://chri.st/images/externalLink.gif) no-repeat right top; padding-right: 10px;}
+span.versenum {vertical-align:super;font-size:7.0pt;}
+abbr, acronym, .help {border-bottom: 1px dotted #333; cursor: help; }</style>
+<title>Bioconductor Project</title>
+</head>
+<body>
+
+
+<h1>Bioconductor Project</h1>
+<p>For my project proposal, I propose to do the following:</p>
+<ul><li>Design a library of mitochondrial stress response genes in the developing mouse cortex using scRNA-seq data described in <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31813-2">www.cell.com/…-1247(17)31813-2</a> and available at: <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107122 ">www.ncbi.nlm.nih.gov/…/acc.cgi</a> and also at <a href="https://github.com/BaderLab/MouseCortex">github.com/…derLab/MouseCortex</a></li>
+<li>identify fusion and fission genes during different developmental stages of the mouse cortex</li>
+<li>Examine all known genes expression levels across the various cell types (8 cell clusters) at multiple time point available in the data (E11.5, 11 at E13.5, 16 at E15.5, and 9 at E17.5)</li>
+<li>choose only genes that are seen in more than 3 cells</li>
+<li>consider generating some summary level visualizations for genes that you select? (ie. heatmap, expression timecourse, etc).</li></ul>
+<p>Can you answer a few of the questions below re: specifics for the project? These will be tasks that you’ll need to complete your proposal and I want to make sure you have a plan before starting: 1) What format will your starting data be in? Do you need to do any preprocessing (alignment, gene counting, removing low quality samples) before your analysis in R? 2) What criteria will you use to determine fusion/fission genes? Is there a predetermined database? 3) Are cell clusters pre-defined in the dataset or will you have to determine them yourself? 4) Can you consider making your code flexible (ie. if the user wants to use a different sample-cell type mapping, or a different cutoff threshold)</p>
+<ul><li class="newline">acgtcgaattac = represent barcodes for each single cell (ie. 1 column is a single cell)</li>
+<li>each row = is a gene</li>
+<li>each entry (ie. o, 22, 5) = the counts for that gene in a single cell</li>
+<li>column 1 (ie. 0610005C13Rik) = gene name, identifier.</li></ul>
+<ol><li class="newline">We will be working with only first 1000 genes due to limitations in computer ability to process data</li>
+<li>remove any genes that are low abundance genes by removing any gene that was found in less than 3 cells.</li>
+<li>Remove any genes that are not part of a list of genes of interest</li>
+<li>Run other processes on data</li>
+<li>Generate heat map</li></ol>
+<ul><li class="newline"><a href="https://bioconductor.org/packages/release/workflows/html/simpleSingleCell.html">bioconductor.org/…gleCell.html</a></li></ul>
+
+
+</body></html>
