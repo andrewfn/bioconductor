@@ -1,6 +1,6 @@
 .Bioconductor Project
 $VER=2.90
-
+<!--View: http://htmlpreview.github.io/?https://github.com/andrewfn/bioconductor/blob/master/project-notes.html -->
 For my project proposal, I propose to do the following:
 -Design a library of mitochondrial stress response genes in the developing mouse cortex using scRNA-seq data described in https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31813-2 and available at: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107122  and also at https://github.com/BaderLab/MouseCortex
 -identify fusion and fission genes during different developmental stages of the mouse cortex
@@ -21,6 +21,4 @@ Can you answer a few of the questions below re: specifics for the project? These
 #. Generate heat map
 
 -https://bioconductor.org/packages/release/workflows/html/simpleSingleCell.html
-
--View with http://htmlpreview.github.io/?https://github.com/andrewfn/bioconductor/blob/master/project-notes.html
 
