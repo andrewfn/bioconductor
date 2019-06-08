@@ -1,0 +1,18 @@
+.Bioconductor Project
+$VER=2.90
+all.cells = read.delim("GSE107122_E155_Combined_All_Cells_DGE.txt", sep="\t", header=F)
+all.cells 
+
+-acgtcgaattac = represent barcodes for each single cell (ie. 1 column is a single cell)
+-each row = is a gene
+-each entry (ie. o, 22, 5) = the counts for that gene in a single cell
+-column 1 (ie. 0610005C13Rik) = gene name, identifier. 
+
+#. We will be working with only first 1000 genes due to limitations in computer ability to process data
+#. remove any genes that are low abundance genes by removing any gene that was fund in less than 3 cells.
+#. Remove any genes that are not part of a list of genes of interest
+#. Run other processes
+#. Generate heat map
+
+-https://bioconductor.org/packages/release/workflows/html/simpleSingleCell.html
+
