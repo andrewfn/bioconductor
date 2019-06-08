@@ -22,3 +22,5 @@ Can you answer a few of the questions below re: specifics for the project? These
 
 -https://bioconductor.org/packages/release/workflows/html/simpleSingleCell.html
 
+-View with http://htmlpreview.github.io/?https://github.com/andrewfn/bioconductor/blob/master/project-notes.html
+
